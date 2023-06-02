@@ -37,7 +37,7 @@ var mobiles = {
             advantage: "Chrome,",
             storage: "74GB RAM 300GB ",
             price: 123999,
-            image: '/mobiless_ui/imges/iph2.jpg'
+            image: '/mobiless_ui/imges/iph3.jpg'
 
         },
         iphone_2: {
@@ -46,7 +46,7 @@ var mobiles = {
             features: "Lock Screen. Lock Screen gallery",
             advantage: "Safarii",
             storage: "64GB RAM 256GB ",
-            image: '/mobiless_ui/imges/iph2.jpg',
+            image: '/mobiless_ui/imges/iph4.jpg',
             SIM: "Mini-SIM",
             Internal: "4/8/16GB",
             camra: "12 MP",
@@ -56,12 +56,13 @@ var mobiles = {
             Sensors: "Accelerometer, proximity",
             bettery: "Li-Ion 1400 mAh, non-removable",
         },
-        iphone3: {
+        iphone_3: {
             advantage: "Safarii",
             storage: "64GB RAM 256GB ",
-            image: '/mobiless_ui/imges/iph2.jpg',
+            image: '/mobiless_ui/imges/iph5.jpg',
             SIM: "Mini-SIM",
             price: 56999,
+            name: "iphone3",
             Internal: "4/8/16GB",
             camra: "12 MP",
             Loudspeaker: true,
@@ -73,15 +74,18 @@ var mobiles = {
     },
     sumsung: {
         sm_1: {
+            
             Display: "Infinite (nominal), 4.498 (sunlight)",
             Sensors: "Fingerprint ",
             WLAN: "Wi-Fi 802.11 ",
             type: "Li-Ion 3400 mAh, non-removable",
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
-            Models: "SM-G973F",
-            Price: "About 300$",
+            name: "SM-G973F",
+            Price: "About 0$",
             Performance: "AnTuTu: 328366",
+            image: '/mobiless_ui/imges/sm1.jpg',
+
             Loudspeaker: "Voice 82dB",
             Audio: "Noise -92.2dB"
         },
@@ -92,10 +96,11 @@ var mobiles = {
             type: "Li-Ion 3400 mAh, non-removable",
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
-            Models: "SM-G973F",
-            Price: "About 300$",
+            Models: "SM-F973F",
+            Price: "About 490$",
             Performance: "AnTuTu: 328366",
             Audio: "Noise -92.2dB",
+            image: '/mobiless_ui/imges/sm2.jpg',
             Loudspeaker: "Voice 82dB",
         },
         sm_3: {
@@ -105,10 +110,11 @@ var mobiles = {
             type: "Li-Ion 3400 mAh, non-removable",
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
-            Models: "SM-G973F",
-            Price: "About 300$",
+            Models: "SM-G73F",
+            Price: "About 440$",
             Performance: "AnTuTu: 328366",
             Loudspeaker: "Voice 82dB",
+            image: '/mobiless_ui/imges/sm3.jpg',
             Audio: "Noise -92.2dB"
 
         },
@@ -119,10 +125,11 @@ var mobiles = {
             type: "Li-Ion 3400 mAh, non-removable",
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
-            Models: "SM-G973F",
-            Price: "About 300$",
+            Models: "SM-73F",
+            Price: "About 330$",
             Performance: "AnTuTu: 328366",
             Loudspeaker: "Voice 82dB",
+            image: '/mobiless_ui/imges/sm4.jpg',
             Audio: "Noise -92.2dB"
 
         },
@@ -134,9 +141,10 @@ var mobiles = {
             type: "Li-Ion 3400 mAh, non-removable",
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
+            image: '/mobiless_ui/imges/sm6.jpg',
 
-            Models: "SM-G973F",
-            Price: "About 300$",
+            Models: "SM-MU3F",
+            Price: "About 320$",
             Performance: "AnTuTu: 328366",
 
             Loudspeaker: "Voice 82dB",
@@ -153,77 +161,369 @@ mob1.append(div)
 div.setAttribute('class', 'mob_li')
 console.log(div)
 div.innerHTML =
-     `
+    `
+
+<div>
     <div class="card">
         <div class="img">
             <img src=" ${mobiles.iphone.iphonese.image} " alt="">
         </div>
         <div class="card_contant">
             <h2 class="card_h"> ${mobiles.iphone.iphonese.name} </h2>
-            <h3 class="price" > ${mobiles.iphone.iphonese.price} </h3>
-            <div class="color" id="col_e" >
-                <buttonn id ="col_btn" onclick="col()" > 
-                <i class="fa-solid fa-circle "></i>
-                <i class="fa-solid fa-circle red"></i>
-                <i class="fa-solid fa-circle blue "></i>
-                <i class="fa-solid fa-circle green"></i>
+            <h3 class="price"> ${mobiles.iphone.iphonese.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
 
-                 </button>
+                    </button>
             </div>
         </div>
     </div>
-    
-
-    <div class="card">
-    <div class="img">
-        <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
-    </div>
-    <div class="card_contant">
-        <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
-        <h3 class="price" > ${mobiles.iphone.iphoneX.price} </h3>
-        <div class="color" id="col_e" >
-            <buttonn id ="col_btn" onclick="col()" > 
-            <i class="fa-solid fa-circle "></i>
-            <i class="fa-solid fa-circle red"></i>
-            <i class="fa-solid fa-circle blue "></i>
-            <i class="fa-solid fa-circle green"></i>
-
-             </button>
-        </div>
-    </div>
-
-
-
-
-
-    
-
-
-
-
 </div>
 
- ` 
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphone_1.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphone_1.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphone_1.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphone_2.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphone_2.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphone_2.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphone_3.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphone_3.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphone_3.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.sumsung.sm_1.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.sumsung.sm_1.name} </h2>
+            <h3 class="price"> ${mobiles.sumsung.sm_1.Price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.sumsung.sm_2.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.sumsung.sm_2.Models} </h2>
+            <h3 class="price"> ${mobiles.sumsung.sm_2.Price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.sumsung.sm_3.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.sumsung.sm_3.Models} </h2>
+            <h3 class="price"> ${mobiles.sumsung.sm_3.Price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.sumsung.sm_4.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.sumsung.sm_4.Models} </h2>
+            <h3 class="price"> ${mobiles.sumsung.sm_4.Price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.sumsung.sm_5.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.sumsung.sm_5.Models} </h2>
+            <h3 class="price"> ${mobiles.sumsung.sm_5.Price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphonese.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphonese.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphonese.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphonese.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphonese.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphonese.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphonese.image} " alt="">
+        </div>
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphonese.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphonese.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <div class="card">
+        <div class="img">
+            <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
+        </div> 
+        <div class="card_contant">
+            <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
+            <div class="color" id="col_e">
+                <buttonn id="col_btn" onclick="col()">
+                    <i class="fa-solid fa-circle "></i>
+                    <i class="fa-solid fa-circle red"></i>
+                    <i class="fa-solid fa-circle blue "></i>
+                    <i class="fa-solid fa-circle green"></i>
+
+                    </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+`
 
 
 
 
 
-// var col_btn = document.getElementById('col_btn')
-// console.log(col_btn)
+function allphone(){
+    window.location.href = `${mobiles}`
+}
+
+function iphone(){
+    window.location.href = `${mobiles.iphone}`
+}
 
 
+function sumsung(){
+    window.location.href = `${mobiles.sumsung}`
+}
 
-
-
-
-// function coll() {
-//     var col_e = document.getElementById('col_e')
-//     console.log('mm')
-//     console.log(col_e)
-//     col_e.innerHTML = `
-//     <i class="fa-solid fa-circle red"></i>
-//     <i class="fa-solid fa-circle blue "></i>
-//     <i class="fa-solid fa-circle green"></i>
-//     `
-// }
