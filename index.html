@@ -6,17 +6,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/332ec18043.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- <h1>CounDown</h1> -->
-    <div id="container2">
-        
+    <div class="navbar">
+        <div class="dropdown">
+            <select name="" id="dropdown" onchange="calling()">
+                <option value="">select value</option>
+                <!-- <option value="">select</option>
+                <option value="">select</option>
+                <option value="">select</option> -->
+
+            </select>
+        </div>
+        <div class="srch_bar">
+            <input type="text" placeholder="search here.." id="">
+        </div>
+
+
+    </div>
+    <div class="header">
+        <a href="#"> <button onclick="all_mob()" class="btn all">All</button> </a>
+        <a href="#"> <button onclick="mob_name('iphone')" class="btn iphone">Iphone</button> </a>
+        <a href="#"> <button onclick="mob_name('nokia')" class="btn nokia">Nokia</button></a>
+        <a href="#"> <button onclick="mob_name('sumsung')" class="btn sumsung">Sumsung</button></a>
+        <a href="#"> <button onclick="mob_name('infinix')" class="btn sumsung">infinix</button></a>
+        <a href="#"> <button onclick="mob_name('vivo')" class="btn sumsung">Vivo</button></a>
+    </div>
+    <!-- <img src="imges/iph4.jpg" alt=""> -->
+
+    <!-- <div id="pr_mb" class="par_mob"> -->
+
+    <div class="mobile_sec " id="mob">
     </div>
 
-</body>
 
+    <!-- </div> -->
+
+
+</body>
 <script src="app.js"></script>
+<!-- <script src="copy.js"></script> -->
 
 </html>

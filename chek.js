@@ -11,7 +11,7 @@ var mobiles = {
             storage: "64GB RAM 256GB ",
             str: "164GB RAM 556GB ",
             color: ['Red ', 'Blue', 'Green'],
-            image: 'imges/iph1.jpg'
+            image: '/imges/iph1.jpg'
 
             // image :  "https://www.google.com/url?sa=i&url=https%3A%2F%2Fie.selectonline.com%2Fiphone-14-pro-max&psig=AOvVaw0s8Jc8yQLYQou3FzLgmdbu&ust=1685680528784000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCNCItLqfof8CFQAAAAAdAAAAABAE"
         },
@@ -61,7 +61,7 @@ var mobiles = {
             storage: "64GB RAM 256GB ",
             image: '/imges/iph5.jpg',
             SIM: "Mini-SIM",
-            price: 55555,
+            price: 56999,
             name: "iphone3",
             Internal: "4/8/16GB",
             camra: "12 MP",
@@ -82,7 +82,7 @@ var mobiles = {
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
             name: "SM-G973F",
-            price: 559895,
+            Price: "About 0$",
             Performance: "AnTuTu: 328366",
             image: 'imges/sm1.jpg',
 
@@ -97,13 +97,11 @@ var mobiles = {
             Bluetooth: "5.0, A2DP,aptX",
             Charging: "15W wired, PD2.0",
             Models: "SM-F973F",
-            name: "SM-999F",
+            Price: "About 490$",
             Performance: "AnTuTu: 328366",
             Audio: "Noise -92.2dB",
             image: '/imges/sm2.jpg',
             Loudspeaker: "Voice 82dB",
-            price: 59895,
-
         },
         sm_3: {
             Display: "Infinite (nominal), 4.498 (sunlight)",
@@ -115,12 +113,9 @@ var mobiles = {
             Models: "SM-G73F",
             Price: "About 440$",
             Performance: "AnTuTu: 328366",
-            name: "SM-9f000",
             Loudspeaker: "Voice 82dB",
             image: '/imges/sm3.jpg',
-            Audio: "Noise -92.2dB",
-            price: 9999895,
-
+            Audio: "Noise -92.2dB"
 
         },
         sm_4: {
@@ -134,11 +129,8 @@ var mobiles = {
             Price: "About 330$",
             Performance: "AnTuTu: 328366",
             Loudspeaker: "Voice 82dB",
-            name: "SM-G973F",
             image: '/imges/sm4.jpg',
-            Audio: "Noise -92.2dB",
-            price: 5895,
-
+            Audio: "Noise -92.2dB"
 
         },
         sm_5: {
@@ -156,155 +148,89 @@ var mobiles = {
             Performance: "AnTuTu: 328366",
 
             Loudspeaker: "Voice 82dB",
-            name: "SM-P973F",
-            Audio: "Noise -92.2dB",
-            price: 9895,
+            Audio: "Noise -92.2dB"
 
-
-        }
-
-    },
-    infinix: {
-        inf_1: {
-            name: "inf-173F",
-            price: 9895,
-            image: '/imges/sm7.jpg',
-        },
-        inf_2: {
-            name: "inf-3F",
-            price: 9895,
-            image: '/imges/sm6.jpg',
-        },
-        inf_3: {
-            name: "inf-973F",
-            price: 9895,
-            image: '/imges/sm8.jpg',
-        },
-        inf_4: {
-            name: "inf-trtF",
-            price: 9895,
-            image: '/imges/sm4.jpg',
-        }
-    },
-    nokia: {
-        noki1_122: {
-            name: "inf-P973F",
-            price: 9895,
-            image: '/imges/sm6.jpg',
-        }
-
-    },
-    vivo: {
-        vivo_93: {
-            name: "VI-3F",
-            price: 9895,
-            image: '/imges/sm2.jpg',
-        },
-        vivo_51: {
-            name: "V-P97",
-            price: 9895,
-            image: '/imges/sm9.jpg',
         }
 
     }
 }
-function for_in() {
-    for (key in mobiles) {
-        // console.log(key)
 
-        var dropdown = document.getElementById('dropdown')
-        var options = document.createElement('option')
-        dropdown.append(options)
-        options.innerHTML = key
-    }
-}
-for_in()
+// var mob1 = document.getElementById('mob')
+// var div = document.createElement('div')
+// mob1.append(div)
+// div.setAttribute('class', 'mob_li');
 
-function all_mob() {
+for ( key in mobiles){
+    console.log(key)
     var mob1 = document.getElementById('mob')
-    var div = document.createElement('div')
-    mob1.append(div)
-    div.setAttribute('class', 'mob_li')
-    // div.innerHTML = ""
-
-    // console.log(div)
-    for (key1 in mobiles) {
-        for (key2 in mobiles[key1]) {
-            div.innerHTML += `
-<div>
+var div = document.createElement('div')
+mob1.append(div)
+div.setAttribute('class', 'mob_li');
+    div.innerHTML = 
+` <div>
     <div class="card">
         <div class="img">
-            <img src=" ${mobiles[key1][key2].image} " alt="">
+            <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
         </div>
         <div class="card_contant">
-            <h2 class="card_h"> ${mobiles[key1][key2].name} </h2>
-            <h3 class="price"> ${mobiles[key1][key2].price} </h3>
+            <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+            <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
             <div class="color" id="col_e">
                 <buttonn id="col_btn" onclick="col()">
                     <i class="fa-solid fa-circle "></i>
                     <i class="fa-solid fa-circle red"></i>
                     <i class="fa-solid fa-circle blue "></i>
                     <i class="fa-solid fa-circle green"></i>
+
                     </button>
             </div>
         </div>
     </div>
-</div>
+</div> 
+`
+    // console.log(mobiles[key])
+    // for ( key1 in mobiles[key]){
+        // console.log(div)
 
-`  }
-    }
-}
-all_mob()
-function calling() {
-    var result = dropdown.options[dropdown.selectedIndex].value
-    console.log(result )
-}
-calling()
+// div.innerHTML = `
+// <div class = "mob_li">
+// <div class = "card">
+// <h1>
+// ${key}
+// </h1>
+// </div>
+// </div>
 
-// mob1 = document.getElementById('mob')
-// div = document.createElement('div')
-// mob1.append(div)
-// div.setAttribute('class', 'mob_li')
-// div.innerHTML = ""
+// `
+// console.log(key)
+// console.log(div)
 
-// div.style.Display == 'none'
-
-function mob_name(brand) {
-
-
-    mob1 = document.getElementById('mob')
-    div = document.createElement('div')
-    mob1.append(div)
-    div.setAttribute('class', 'mob_li')
-    div.innerHTML = ""
-
-    // console.log(div)
-
-
-    for (var filtr1 in mobiles[brand]) {
-        div.innerHTML += `
-<div>
-    <div class="card">
-        <div class="img">
-            <img src=" ${mobiles[brand][filtr1].image} " alt="">
-        </div>
-        <div class="card_contant">
-            <h2 class="card_h"> ${mobiles[brand][filtr1].name} </h2>
-            <h3 class="price"> ${mobiles[brand][filtr1].price} </h3>
-            <div class="color" id="col_e">
-                <buttonn id="col_btn" onclick="col()">
-                    <i class="fa-solid fa-circle "></i>
-                    <i class="fa-solid fa-circle red"></i>
-                    <i class="fa-solid fa-circle blue "></i>
-                    <i class="fa-solid fa-circle green"></i>
-                 </button>
-            </div>
-         </div>
-    </div>
-</div>
-            `
-    }
+        // console.log(mobiles[key][key1])
+    
+// }
 }
 
+// console.log(div)
+// div.innerHTML = 
+ 
+// ` <div>
+//     <div class="card">
+//         <div class="img">
+//             <img src=" ${mobiles.iphone.iphoneX.image} " alt="">
+//         </div>
+//         <div class="card_contant">
+//             <h2 class="card_h"> ${mobiles.iphone.iphoneX.name} </h2>
+//             <h3 class="price"> ${mobiles.iphone.iphoneX.price} </h3>
+//             <div class="color" id="col_e">
+//                 <buttonn id="col_btn" onclick="col()">
+//                     <i class="fa-solid fa-circle "></i>
+//                     <i class="fa-solid fa-circle red"></i>
+//                     <i class="fa-solid fa-circle blue "></i>
+//                     <i class="fa-solid fa-circle green"></i>
 
-
+//                     </button>
+//             </div>
+//         </div>
+//     </div>
+// </div> 
+// `
